@@ -12,6 +12,7 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 
 import java.sql.Date;
+import java.time.Instant;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
@@ -35,7 +36,7 @@ public class Usuario {
     @NotEmpty(message = "Emails is required")
     private String email;
 
-    private Date created;
+    private Instant created;
 
     private boolean isEnabled;
 
